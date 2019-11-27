@@ -1,3 +1,22 @@
+neural-style-pt
+neural-style-pt is a essentially neural-style rewritten in PyTorch, and comes with all the same features as the original and more.
+
+Multi-GPU support was the only major feature missing from neural-style-pt that /u/jcjohnss's neural-style already had.
+
+New Features And Improvements
+
+You can use any combination of CPU and GPU devices with the "-gpu" and "-multidevice_strategy" parameters.
+
+neural-style-pt can now be easily installed as a pip package!
+
+6 popular original models from neural-style are now available for download and usage.
+
+Support for AMD GPUs. Using ROCm, you should be able to run CUDA code on AMD GPUs. I didn't actually do anything to support AMD GPUs, but I'm happy to take credit for the work of others.
+
+The original neural-style was written in Lua using Torch7, which is no longer under active development. I wrote neural-style-pt in Python using PyTorch. PyTorch is Torch7's successor, and thus it is a lot faster, more memory efficient, and easier to install than Torch7.
+https://www.reddit.com/r/deepdream/comments/db04xb/neuralstylept_update_support_for_multigpu_and_cpu/
+
+
 # neural-style-pt
 
 This is a PyTorch implementation of the paper [A Neural Algorithm of Artistic Style](http://arxiv.org/abs/1508.06576)
